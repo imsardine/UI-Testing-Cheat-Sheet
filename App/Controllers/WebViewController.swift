@@ -7,16 +7,26 @@
 //
 
 import UIKit
+import WebKit
 
 class WebViewController: UIViewController {
-    @IBOutlet weak var webView: UIWebView!
+
+    @IBOutlet var viewContainer: UIView!
+    var webView: WKWebView?
+
+    override func loadView() {
+        super.loadView()
+
+        self.webView = WKWebView()
+        self.view = self.webView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = NSURL(string: "https://wikipedia.org/wiki/Volleyball")
+        let url = NSURL(string: "https://en.wikipedia.org/wiki/Volleyball")
         let request = NSURLRequest(URL: url!)
-        self.webView.loadRequest(request)
+        self.webView!.loadRequest(request)
     }
 
     @IBAction func doneButtonTapped(sender: UIBarButtonItem) {
