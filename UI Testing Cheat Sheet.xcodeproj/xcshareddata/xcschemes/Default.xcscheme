@@ -37,6 +37,53 @@
                BlueprintName = "UI Tests"
                ReferencedContainer = "container:UI Testing Cheat Sheet.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "UITests/testAdjustingAPicker()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testAdjustingASlider()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testCellReordering()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testDismissingASystemAlert()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testDismissingAnAlert()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testElementExists()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testElementExistsWithPredicate()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testElementWithEllipseExists()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testPoppingAViewController()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testPushingAController()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testRefreshControl()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testTappingAButton()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testTappingALinkInAWebView()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testTextExistsInAWebView()">
+               </Test>
+               <Test
+                  Identifier = "UITests/testWaitingForAnElementToAppear()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
